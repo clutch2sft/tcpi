@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tshark Control Panel</title>
+</head>
+<body>
+    <h1>Tshark Service Control</h1>
+    {% if selected_ips %}
+        <div>
+            <h3>Currently Selected IP Addresses:</h3>
+            <p>{{ selected_ips|join(', ') }}</p>
+        </div>
+    {% endif %}
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <ul>
+                {% for message in messages %}
+                    <li>{{ message }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    {% endwith %}
+
+    <!-- Start/Stop Service -->
+    <form action="/control_service" method="post">
+        <input class="button" type="submit" id="startButton" name="action" value="Start Service">
+        <input class="button" type="submit" id="stopButton" name="action" value="Stop Service">
+    </form>
+
+    <!-- IP Address Selection with Checkboxes -->
+    <form action="/set_filter" method="post">
+        <fieldset>
+            <legend>Select AGVs to filter on:</legend>
+            <div>
+                <input type="checkbox" id="ip1" name="ip_addresses" value="120.13.212.31">
+                <label for="ip1">AGV 002</label>
+            </div>
+            <div>
+                <input type="checkbox" id="ip2" name="ip_addresses" value="120.13.212.50">
+                <label for="ip2">AGV 021</label>
+            </div>
+            <div>
+                <input type="checkbox" id="ip3" name="ip_addresses" value="120.13.212.56">
+                <label for="ip3">AGV 027</label>
+            </div>
+            <div>
+                <input type="checkbox" id="ip4" name="ip_addresses" value="120.13.212.72">
+                <label for="ip4">AGV 043</label>
+            </div>
+            <div>
+                <input type="checkbox" id="ip5" name="ip_addresses" value="120.13.212.85">
+                <label for="ip5">AGV 056</label>
+            </div>
+            <div>
+                <input type="checkbox" id="ip6" name="ip_addresses" value="120.13.212.91">
+                <label for="ip6">AGV 062</label>
+            </div>
+            <div>
+                <input type="checkbox" id="ip7" name="ip_addresses" value="120.13.212.104">
+                <label for="ip7">AGV 075</label>
+            </div>
+            <div>
+                <input type="checkbox" id="ip8" name="ip_addresses" value="120.13.212.107">
+                <label for="ip8">AGV 078</label>
+            </div>
+            <div>
+                <input type="checkbox" id="ip9" name="ip_addresses" value="120.13.212.167">
+                <label for="ip9">AGV 138</label>
+            </div>
+            <div>
+                <input type="checkbox" id="ip10" name="ip_addresses" value="120.13.212.212">
+                <label for="ip10">AGV 183</label>
+            </div>
+            <!-- Add more checkboxes as needed -->
+        </fieldset>
+        <input type="submit" value="Set Filter" class="button">
+    </form>
+
+
+    <a href="/list_captures" id="downloadButton" class="button"><button>Download Captures</button></a>
+
+    <!-- Service Status -->
+    <div>
+        <h2>Simple Status</h2>
+        <p id="service_status_simple">Loading simple status...</p>
+        <p id="service_status_detail"></p>
+        <button class="button" onclick="updateSimpleStatus()">Refresh Simple Status</button>
+    </div>
+
+    <!-- Full Status Display -->
+    <div>
+        <h2>Full Status</h2>
+        <div id="status-container" class="terminal-output">
+            <!-- Full status will be inserted here -->
+        </div>
+        <button class="button" onclick="updateFullStatus()">Refresh Full Status</button>
+    </div>
+
+    <!-- Logout -->
+    <form action="{{ url_for('logout') }}" method="get">
+        <button class="button" type="submit">Logout</button>
+    </form>
+    <style>
+        .status-active {
+            color: green;
+        }
+
+        .status-inactive {
+            color: red;
+        }
+        .button {
+            margin-top: 15px; /* Add space to the right of each button */
+            margin-bottom: 15px; /* Add space to the right of each button */
+        }
+        #startButton {
+            background-color: green;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+    
+        #startButton:hover {
+            background-color: darkgreen;
+        }
+    
+        #stopButton {
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+    
+        #stopButton:hover {
+            background-color: darkred;
+        }
+        .packets-captured {
+            color: green;
+        }
+
+        .packets-dropped {
+                color: red;
+        }
+        .terminal-output {
+        background-color: yellow;
+        font-family: 'Courier New', Courier, monospace;
+        padding: 10px;
+        border-radius: 5px;
+        white-space: pre-wrap;
+        }
+        .status-stopped {
+                color: red;
+            }
+
+            @keyframes blink {
+                50% { color: transparent; }
+            }
+
+        .status-running {
+            color: green;
+            animation: blink 1s step-start 0s infinite;
+        }
+        #downloadButton {
+            background: linear-gradient(45deg, #4CAF50, #81C784); /* Green gradient */
+            border: none;
+            color: white; /* White text */
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        #downloadButton:hover {
+            background: linear-gradient(45deg, #388E3C, #66BB6A); /* Darker green gradient */
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        #downloadButton:active {
+            box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+    
+    <script>
+        function updateStatus() {
+            // fetch('/status')
+            // .then(response => response.text()) // Get the response text (HTML content)
+            // .then(html => {
+            //     document.getElementById('status-container').innerHTML = html;
+            // })
+            // .catch(error => {
+            //     console.error('Error fetching status:', error);
+            //     document.getElementById('status-container').innerHTML = 'Error fetching status';
+            // });
+            updateSimpleStatus();
+            updateFullStatus();
+
+        }
+        function updateSimpleStatus() {
+            fetch('/status')
+            .then(response => response.json())
+            .then(data => {
+                const statusElement = document.getElementById('service_status_simple');
+                statusElement.innerText = data.status_simple;
+
+                // Remove previous status classes
+                statusElement.classList.remove('status-stopped', 'status-running');
+
+                // Add the appropriate class based on the status
+                if (data.status_simple === 'Stopped') {
+                    statusElement.classList.add('status-stopped');
+                } else if (data.status_simple === 'Running') {
+                    statusElement.classList.add('status-running');
+                }
+            })
+            .catch(error => {
+                console.error('Error fetching simple status:', error);
+                document.getElementById('service_status_simple').innerText = 'Error';
+                document.getElementById('service_status_simple').classList.remove('status-stopped', 'status-running');
+            });
+        }
+
+
+        function updateFullStatus() {
+            fetch('/status?full=true')
+            .then(response => response.text())
+            .then(text => {
+                const lines = text.split('\n'); // Split the text into lines
+                const formattedLines = lines.map(line => {
+                    if (line.includes("packets captured")) {
+                        return `<span class="packets-captured">${line}</span>`;
+                    } else if (line.includes("packets dropped")) {
+                        return `<span class="packets-dropped">${line}</span>`;
+                    } else if (line.includes("Active: active (running)")) {
+                        return `<span class="status-active">${line}</span>`;
+                    } else if (line.includes("Active: inactive (dead)")) {
+                        return `<span class="status-inactive">${line}</span>`;
+                    } else {
+                        return line;
+                    }
+                });
+                document.getElementById('status-container').innerHTML = formattedLines.join('<br>');
+            })
+            .catch(error => {
+                console.error('Error fetching full status:', error);
+                document.getElementById('status-container').innerHTML = 'Error fetching status';
+            });
+        }
+
+        
+
+        document.getElementById('startButton').addEventListener('click', function(event) {
+            event.preventDefault();
+            fetch('/control_service', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                },
+                body: 'action=Start+Service'
+            }).then(() => {
+                updateStatus();
+            });
+        });
+    
+        document.getElementById('stopButton').addEventListener('click', function(event) {
+            event.preventDefault();
+            fetch('/control_service', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                },
+                body: 'action=Stop+Service'
+            }).then(() => {
+                updateStatus();
+            });
+        });
+    
+        // Call updateStatus every 5 seconds
+        setInterval(updateStatus, 5000);
+    
+        // Update status when the page loads
+        window.onload = function() {
+            updateStatus();
+        };
+    </script>
+    
+        
+</body>
+</html>

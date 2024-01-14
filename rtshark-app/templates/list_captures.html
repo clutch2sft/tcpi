@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Capture Files</title>
+</head>
+<body>
+    <h1>Capture Files</h1>
+    <table>
+        <tr>
+            <th>File Name</th>
+            <th>Size (MB)</th>
+            <th>Last Modified</th>
+            <th>Download</th>
+        </tr>
+        {% for file in capture_files %}
+            <tr>
+                <td>{{ file.name }}</td>
+                <td>{{ file.size }}</td>
+                <td>{{ file.mtime }}</td>
+                <td><a href="{{ url_for('download_file', filename=file.name) }}">Download</a></td>
+            </tr>
+        {% endfor %}
+    </table>
+    <a href="/">Back to Home</a>
+</body>
+</html>

@@ -1,0 +1,11 @@
+[Unit]
+Description=IP Conflict Monitor
+After=network.target
+
+[Service]
+ExecStart=/usr/local/bin/my-ip-monitor.sh
+Restart=on-failure
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target

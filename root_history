@@ -1,0 +1,500 @@
+   44  mkdir rtshark-app
+   45  cd rtshark-app
+   46  history | grep env
+   47  exit
+   48  sudo supervisorctl start rtshark-app
+   49  sudo supervisorctl start rtshark-app
+   50  sudo supervisorctl restart rtshark-app
+   51  tail -f  /var/log/rtshark-app/rtshark-app.err.log
+   52  ls /var/log/rtshark-app/
+   53  tail -f  /var/log/rtshark-app/rtshark-app.out.log
+   54  sudo supervisorctl restart rtshark-app
+   55  sudo supervisorctl stop rtshark-app
+   56  sudo supervisorctl stop rtshark-app
+   57  sudo supervisorctl start rtshark-app
+   58  sudo supervisorctl stop rtshark-app
+   59  sudo nano /etc/supervisor/conf.d/tshark-app.conf
+   60  sudo supervisorctl start rtshark-app
+   61  sudo nano /etc/supervisor/conf.d/tshark-app.conf
+   62  tail -f  /var/log/rtshark-app/rtshark-app.out.log
+   63  tail -f  /var/log/rtshark-app/rtshark-app.err.log
+   64  tail -f  /var/log/rtshark-app/rtshark-app.out.log
+   65  sudo supervisorctl restart rtshark-app
+   66  tail -f  /var/log/rtshark-app/rtshark-app.out.log
+   67  tail -f  /var/log/rtshark-app/rtshark-app.err.log
+   68  sudo supervisorctl stop rtshark-app
+   69  sudo supervisorctl start rtshark-app
+   70  tail -f  /var/log/rtshark-app/rtshark-app.out.log
+   71  tail -f  /var/log/rtshark-app/rtshark-app.err.log
+   72  sudo nano /etc/supervisor/conf.d/tshark-app.conf
+   73  sudo nano /etc/supervisor/conf.d/tshark-app.conf
+   74  sudo nano /etc/supervisor/conf.d/tshark-app.conf
+   75  sudo supervisorctl start rtshark-app
+   76  sudo supervisorctl restart rtshark-app
+   77  tail -f  /var/log/rtshark-app/rtshark-app.out.log
+   78  tail -f  /var/log/rtshark-app/rtshark-app.err.log
+   79  sudo supervisorctl restart rtshark-app
+   80  tail -f  /var/log/rtshark-app/rtshark-app.err.log
+   81  tail -f  /var/log/rtshark-app/rtshark-app.out.log
+   82  sudo supervisorctl restart rtshark-app
+   83  tail -f  /var/log/rtshark-app/rtshark-app.out.log
+   84  exit
+   85  tail -f  /var/log/rtshark-app/rtshark-app.out.log
+   86  touch /var/log/rtshark-app/inapplog.log
+   87  chown rtshark:rtshark /var/log/rtshark-app/inapplog.log
+   88  tail -f /var/log/rtshark-app/inapplog.log
+   89  exit
+   90  sudo supervisorctl restart rtshark-app
+   91  sudo supervisorctl restart rtshark-app
+   92  sudo supervisorctl restart rtshark-app
+   93  sudo supervisorctl restart rtshark-app
+   94  sudo supervisorctl restart rtshark-app
+   95  sudo supervisorctl restart rtshark-app
+   96  sudo nano /etc/supervisor/conf.d/tshark-app.conf
+   97  sudo supervisorctl reread
+   98  sudo supervisorctl update
+   99  sudo supervisorctl restart tshark-app
+  100  sudo supervisorctl restart rtshark-app
+  101  sudo supervisorctl restart rtshark-app
+  102  sudo supervisorctl restart rtshark-app
+  103  sudo supervisorctl restart rtshark-app
+  104  sudo supervisorctl restart rtshark-app
+  105  exit
+  106  Gmotors13!
+  107  cd /opt
+  108  ls
+  109  ls -lah
+  110  cd rtshark
+  111  cd rtshark-app
+  112  ls
+  113  ls -lah
+  114  chmod 775 ./templates
+  115  history
+  116  tail -f  /var/log/rtshark-app/rtshark-app.out.log
+  117  tail -f /var/log/rtshark-app/rtshark-app.err.log
+  118  ls -lah /var/log/tshark-app
+  119  ls -lah /var/log/rtshark-app
+  120  tail -f /var/log/rtshark-app/inapplog.log
+  121  sudo supervisorctl restart rtshark-app
+  122  tail -f /var/log/rtshark-app/inapplog.log
+  123  history | grep status
+  124  systemctl status tshark.service
+  125  systemctl status tshark.service
+  126  tail -f /var/log/rtshark-app/inapplog.log
+  127  systemctl status tshark.service
+  128  systemctl status tshark.service
+  129  tail -f /var/log/rtshark-app/inapplog.log
+  130  visudo
+  131  tail -f /var/log/rtshark-app/inapplog.log
+  132  visudo
+  133  sudo supervisorctl stop rtshark-app
+  134  sudo supervisorctl start rtshark-app
+  135  lsb_release
+  136  lsb_release -a
+  137  arping
+  138  apt install arping
+  139  ip add
+  140  history | grep net
+  141  history | grep syste
+  142  exit
+  143  nmcli con up idcleanse
+  144  nmcli con down idcleanse
+  145  nmcli con up idcleanse
+  146  nmcli con mod agclogen connection.autoconnect-priority 5
+  147  grep my-network-script /var/log/syslog
+  148  ls /var/log
+  149  cd /var/log
+  150  grep my-network-script ./*
+  151  grep -r my-network-script ./*
+  152  journalctl -t my-network-script
+  153  nmcli con down idcleanse
+  154  journalctl -t my-network-script
+  155  journalctl -t my-network-script
+  156  journalctl -t my-network-script
+  157  journalctl -t my-network-script
+  158  journalctl -t my-network-script
+  159  journalctl -t my-network-script
+  160  journalctl -t my-network-script
+  161  journalctl -t my-network-script
+  162  journalctl -t my-network-script
+  163  journalctl -t my-network-script
+  164  journalctl -t my-network-script
+  165  journalctl -t my-network-script
+  166  nmcli con up idcleanse
+  167  journalctl -t my-network-script
+  168  nmcli con add con-name idcleanse ifname wlan0 type wifi ssid "3 IDCleanse Devices-129" ip4 192.168.1.50/24 gw4 192.168.1.1
+  169  nmcli con modify idcleanse wifi-sec.key-mgmt wpa-psk
+  170  nmcli con modify idcleanse wifi-sec.psk "bG+dsfmx+NBZzEr=:%"
+  171  nmcli con modify idcleanse ipv4.dns 1.1.1.1
+  172  ls /etc/NetManger
+  173  ls /etc/NetworkManager
+  174  ls /etc/NetworkManager/system-connections
+  175  cat /etc/NetworkManager/system-connections/idcleanse.nmconnection
+  176  nmcli con up idcleanse
+  177  ip add
+  178  sudo arping -I wlan0 172.16.20.1
+  179  arping
+  180  ip link help
+  181  ip link show eth0
+  182  cat /etc/sysctl.conf
+  183  sudo sysctl -p
+  184  ip add
+  185  apt install arping
+  186  sudo arping -I wlan0 172.16.20.1
+  187  arp -a
+  188  arp print
+  189  sudo arping -I wlan0 172.16.20.2
+  190  nmcli device status
+  191  nmcli device status | grep -q "wlan0.*connected"
+  192  echo $?
+  193  nmcli device status | grep -q "wlan1.*connected"
+  194  echo $?
+  195  cat /etc/NetworkManager/system-connections/idcleanse.nmconnection
+  196  nmcli con show idcleanse | grep autoconnect-priority
+  197  nmcli con mod idcleanse ipv4.method auto
+  198  nmcli con down idcleanse
+  199  nmcli con up idcleanse
+  200  ip add
+  201  cat /etc/NetworkManager/system-connections/idcleanse.nmconnection
+  202  nmcli con mod idcleanse ipv4.addresses ""
+  203  nmcli con mod idcleanse ipv4.gateway ""
+  204  cat /etc/NetworkManager/system-connections/idcleanse.nmconnection
+  205  nmcli con down idcleanse
+  206  nmcli con up idcleanse
+  207  ip add
+  208  nmcli con mod idcleanse ipv4.addresses ""
+  209  ip add
+  210  cat /etc/NetworkManager/system-connections/idcleanse.nmconnection
+  211  nmcli con down idcleanse
+  212  nmcli con up idcleanse
+  213  ip add
+  214  nmcli con down idcleanse
+  215  nmcli con mod agclogen ipv4.method manual
+  216  nmcli con mod idcleanse ipv4.method manual
+  217  cat /etc/NetworkManager/system-connections/idcleanse.nmconnection
+  218  nmcli con mod agclogen ipv4.method manual
+  219  nmcli con mod idclenase ipv4.method manual
+  220  nmcli con mod idcleanse ipv4.method manual
+  221  nmcli con mod idcleanse ipv4.method manual ip4 192.168.1.50/24 gw4 192.168.1.1
+  222  cat /etc/NetworkManager/system-connections/idcleanse.nmconnection
+  223  cat /etc/NetworkManager/system-connections/idcleanse.nmconnection
+  224  nmcli con up idcleanse
+  225  ip add
+  226  nmcli con down idcleanse
+  227  nmcli con mod idcleanse ipv4.method manual ip4 120.13.212.243/24 gw4 120.13.212.1
+  228  cat /etc/NetworkManager/system-connections/idcleanse.nmconnection
+  229  nmcli con mod idcleanse ipv4.addresses ""
+  230  nmcli con mod idcleanse ipv4.addresses ""
+  231  cat /etc/NetworkManager/system-connections/idcleanse.nmconnection
+  232  nmcli con mod idcleanse ipv4.addresses1 ""
+  233  cat /etc/NetworkManager/system-connections/idcleanse.nmconnection
+  234  nano /etc/NetworkManager/system-connections/idcleanse.nmconnection
+  235  nmcli con mod idcleanse ipv4.method manual ip4 192.168.1.50/24 gw4 192.168.1.1
+  236  nano /etc/NetworkManager/system-connections/idcleanse.nmconnection
+  237  cat /etc/NetworkManager/system-connections/idcleanse.nmconnection
+  238  nmcli con mod idcleanse ipv4.method auto
+  239  cat /etc/NetworkManager/system-connections/idcleanse.nmconnection
+  240  nmcli con mod idcleanse ipv4.addresses1 ""
+  241  nmcli con mod idcleanse ipv4.addresses ""
+  242  nmcli con mod idcleanse ipv4.gw ""
+  243  nmcli con mod idcleanse ipv4.gateway ""
+  244  cat /etc/NetworkManager/system-connections/idcleanse.nmconnection
+  245  nmcli con mod idcleanse ipv4.addresses ""
+  246  cat /etc/NetworkManager/system-connections/idcleanse.nmconnection
+  247  nmcli con mod idcleanse ipv4.method manual ip4 192.168.1.50/24 gw4 192.168.1.1
+  248  cat /etc/NetworkManager/system-connections/idcleanse.nmconnection
+  249  nmcli con mod idcleanse ipv4.gateway ""
+  250  nmcli con mod idcleanse ipv4.addresses ""
+  251  cat /etc/NetworkManager/system-connections/idcleanse.nmconnection
+  252  nmcli con mod idcleanse ipv4.method auto
+  253  nmcli con mod idcleanse ipv4.addresses ""
+  254  nano /usr/local/bin/find_wlan_ip_and_set.sh
+  255  chmod +x /usr/local/bin/find_wlan_ip_and_set.sh
+  256  /usr/local/bin/find_wlan_ip_and_set.sh
+  257  ip add
+  258  nmcli con add con-name agclogen ifname wlan0 type wifi ssid agclogen ip4 192.168.1.50/24 gw4 192.168.1.1
+  259  nmcli con modify agclogen wifi-sec.key-mgmt wpa-psk
+  260  nmcli con modify agclogen wifi-sec.psk "hNIaYg5r1WLXPgmNQcvlAFkL674wts5Z"
+  261  nmcli con modify agclogen ipv4.dns 1.1.1.1
+  262  nmcli device status | grep "wlan0.*connected"
+  263  nmcli device status | grep -q "wlan0.*connected"
+  264  echo $?
+  265  nmcli device status | grep -q "wlan0\s* wifi\s* connected"
+  266  echo $?
+  267  nmcli con up idcleanse
+  268  nmcli device status | grep -q "wlan0\s* wifi\s* connected"
+  269  echo $?
+  270  nano /usr/local/bin/find_wlan_ip_and_set.sh
+  271  nmcli con down idcleanse
+  272  /usr/local/bin/find_wlan_ip_and_set.sh
+  273  cat /usr/local/bin/find_wlan_ip_and_set.sh
+  274  nano /usr/local/bin/find_wlan_ip_and_set.sh
+  275  /usr/local/bin/find_wlan_ip_and_set.sh
+  276  nano /usr/local/bin/find_wlan_ip_and_set.sh
+  277  /usr/local/bin/find_wlan_ip_and_set.sh
+  278  /usr/local/bin/find_wlan_ip_and_set.sh
+  279  nano /usr/local/bin/find_wlan_ip_and_set.sh
+  280  reboot now
+  281  journalctl -t wlan0-set-ip
+  282  ip add
+  283  nmcli con show
+  284  /usr/local/bin/find_wlan_ip_and_set.sh
+  285  journalctl -t wlan0-set-ip
+  286  reboot now
+  287  nmcli con show
+  288  /usr/local/bin/find_wlan_ip_and_set.sh
+  289  nmcli con show
+  290  journalctl -t wlan0-set-ip
+  291  cat /usr/local/bin/find_wlan_ip_and_set.sh
+  292  cat /etc/NetworkManager/system-connections/idcleanse.nmconnection
+  293  cat /etc/NetworkManager/system-connections/agclogen.nmconnection
+  294  current_ip=$(nmcli -t -f IP4.ADDRESS dev show wlan0 | cut -d'/' -f1)
+  295  export current_ip=$(nmcli -t -f IP4.ADDRESS dev show wlan0 | cut -d'/' -f1)
+  296  echo $current_ip
+  297  rping -c 2 -w 3 -I wlan0 $current_ip | grep "Unicast reply from"
+  298  arping -c 2 -w 3 -I wlan0 $current_ip | grep "Unicast reply from"
+  299  nmcli -t -f IP4.ADDRESS dev show wlan0 | cut -d'/' -f1
+  300  nmcli -t -f IP4.ADDRESS dev show wlan0 | awk -F: '{print $2}' | cut -d'/' -f1
+  301  export current_ip=nmcli -t -f IP4.ADDRESS dev show wlan0 | awk -F: '{print $2}' | cut -d'/' -f1
+  302  export current_ip=$(nmcli -t -f IP4.ADDRESS dev show wlan0 | awk -F: '{print $2}' | cut -d'/' -f1)
+  303  echo $current_ip
+  304  arping -c 2 -w 3 -I wlan0 $current_ip | grep "Unicast reply from"
+  305  arping -c 2 -w 3 -I wlan0 12
+  306  ip add
+  307  arping -c 2 -w 3 -I wlan0 172.16.20.1 | grep "Unicast reply from"
+  308  arping -c 2 -w 3 -I wlan0 172.16.20.1 
+  309  arping -c 2 -w 3 -I wlan0 
+  310  arping -c 2 -w 3 -I wlan0 $current_ip 
+  311  nano /usr/local/bin/my-ip-monitor.sh
+  312  chmod +x /usr/local/bin/my-ip-monitor.sh
+  313  nano /usr/local/bin/my-ip-monitor.sh
+  314  ls  /usr/local/bin/
+  315  cat  /usr/local/bin/find_wlan_ip_and_set.sh
+  316  nano /usr/local/bin/my-ip-monitor.sh
+  317  cat /etc/NetworkManager/system-connections/agclogen.nmconnection
+  318  nano /etc/systemd/system/ip-monitor.service
+  319  sudo systemctl daemon-reload
+  320  sudo systemctl enable ip-monitor.service
+  321  sudo systemctl start ip-monitor.service
+  322  journalctl -t my-ip-monitor
+  323  journalctl -t my-ip-monitor
+  324  journalctl -t my-ip-monitor
+  325  journalctl -t my-ip-monitor
+  326  journalctl -t my-ip-monitor
+  327  journalctl -t my-ip-monitor
+  328  journalctl -t my-ip-monitor
+  329  journalctl -t my-ip-monitor
+  330  journalctl -t my-ip-monitor
+  331  journalctl -t my-ip-monitor
+  332  journalctl -t my-ip-monitor
+  333  journalctl -t my-ip-monitor
+  334  la /usr/local/bin/
+  335  ls /usr/local/bin/
+  336  sudo nano /etc/systemd/system/find_wlan_ip_and_set.service
+  337  sudo nano /etc/systemd/system/find_wlan_ip_and_set.service
+  338  nano /usr/local/bin/find_wlan_ip_and_set.sh
+  339  sudo nano /etc/systemd/system/find_wlan_ip_and_set.service
+  340  sudo systemctl daemon-reload
+  341  sudo systemctl daemon-reload
+  342  sudo systemctl enable find_wlan_ip_and_set.service
+  343  ip add
+  344  cat /etc/systemd/system/find_wlan_ip_and_set.service
+  345  cat  /usr/local/bin/find_wlan_ip_and_set.sh
+  346      nmcli con mod agclogen ipv4.method auto
+  347      nmcli con mod agclogen ipv4.gateway ""
+  348      nmcli con mod agclogen ipv4.addresses ""
+  349  nmcli con down agclogen
+  350  nmcli con up agclogen
+  351  journalctl -xe NM_CONNECTION=23691f45-0a34-40d7-ad2f-2d24140f8500 + NM_DEVICE=wlan0
+  352  cat  /usr/local/bin/find_wlan_ip_and_set.sh
+  353  nmcli con mod agclogen ipv4.method manual ipv4.addresses 192.168.65.87 ipv4.gateway 192.168.65.1
+  354  nmcli con up agclogen
+  355  ip add
+  356  nano 
+  357  nano /etc/sysctl.conf
+  358  sudo sysctl -p
+  359  ip add
+  360  ip add
+  361  nano   /usr/local/bin/find_wlan_ip_and_set.sh
+  362  cat  /usr/local/bin/my-ip-monitor.sh
+  363  nano /usr/local/bin/boot-ip-reset.sh
+  364  chmod +x /usr/local/bin/boot-ip-reset.sh
+  365  nano /etc/systemd/system/boot-ip-reset.service
+  366  sudo systemctl daemon-reload
+  367  sudo systemctl enable boot-ip-reset.service
+  368  reboot now
+  369  history | grep journal
+  370  journalctl -t my-ip-monitor
+  371  ip add
+  372  history | grep journal
+  373  journalctl -t wlan0-set-ip
+  374  ls /usr/local/bin
+  375  cat /usr/local/bin/boot-ip-reset.sh
+  376  journalctl -t boot-ip-reset
+  377  history | grep jour
+  378  journalctl -t my-ip-monitor
+  379  journalctl -t my-ip-monitor
+  380  journalctl -t my-ip-monitor
+  381  journalctl -t my-ip-monitor
+  382  journalctl -t my-ip-monitor
+  383  journalctl -t my-ip-monitor
+  384  journalctl -t my-ip-monitor
+  385  ping 120.13.212.254
+  386  arp -a
+  387  cat /usr/local/bin/my-ip-monitor.sh
+  388  export current_ip=$(nmcli -t -f IP4.ADDRESS dev show wlan0 | awk -F: '{print $2}' | cut -d'/' -f1)
+  389  echo $current_ip
+  390  arping -c 2 -w 3 -I wlan0 $current_ip
+  391  arping -c 2 -w 3 -I wlan0 $current_ip
+  392  arping -c 2 -w 3 -I wlan0 $current_ip
+  393  journalctl -t my-ip-monitor
+  394  journalctl -t my-ip-monitor
+  395  arping -c 2 -w 3 -I wlan0 $current_ip
+  396  arping -c 2 -w 3 -I wlan0 $current_ip
+  397  arping -c 2 -w 3 -I wlan0 $current_ip
+  398  arping -c 2 -w 3 -I wlan0 $current_ip
+  399  arping -c 2 -w 3 -I wlan0 $current_ip
+  400  arping -c 2 -w 3 -I wlan0 $current_ip
+  401  arping -c 2 -w 3 -I wlan0 $current_ip
+  402  arping -c 2 -w 3 -I wlan0 $current_ip
+  403  arping -c 2 -w 3 -I wlan0 $current_ip
+  404  arping -c 2 -w 3 -I wlan0 $current_ip
+  405  arping -c 2 -w 3 -I wlan0 $current_ip
+  406  arping -c 2 -w 3 -I wlan0 $current_ip
+  407  ip add
+  408  arping -c 2 -w 3 -I wlan0 $current_ip
+  409  iptables -L
+  410  arping -c 2 -w 3 -I wlan0 120.13.212.253
+  411  reboot now
+  412  history | grep cat
+  413  cat /usr/local/bin/boot-ip-reset.sh
+  414  journelctl -t boot-ip-reset
+  415  journalctl -t boot-ip-reset
+  416  nmcli con down agclogen
+  417      nmcli con mod agclogen ipv4.gateway ""
+  418      nmcli con mod agclogen ipv4.addresses ""
+  419      nmcli con mod agclogen ipv4.method auto
+  420      nmcli con mod agclogen ipv4.gateway ""
+  421      nmcli con mod agclogen ipv4.addresses ""
+  422      nmcli con mod agclogen ipv4.method manual ipv4.addresses 192.168.1.50/24 ipv4.gateway 192.168.1.1
+  423  nmcli con up agclogen
+  424  ip addd
+  425  ip add
+  426   cat  /usr/local/bin/find_wlan_ip_and_set.sh
+  427  arping -c 2 -w 3 -I wlan0 120.13.212.254
+  428  arping -c 2 -w 3 -I wlan0 120.13.212.253
+  429  ping 120.13.212.254
+  430  ping 120.13.212.253
+  431  arping --help
+  432  arping -0 -c 2 -w 3 -I wlan0 120.13.212.253
+  433  arping -0 -c 2 -w 3 -I wlan0 120.13.212.254
+  434  nano   /usr/local/bin/find_wlan_ip_and_set.sh
+  435  reboot now
+  436  history | grep cat
+  437  nano /usr/local/bin/my-ip-monitor.sh
+  438  journalctl -t my-ip-monitory
+  439  journalctl -t my-ip-monitor
+  440  journalctl -t my-ip-monitor
+  441  journalctl -t my-ip-monitor
+  442  journalctl -t my-ip-monitor
+  443  journalctl -t my-ip-monitor
+  444  journalctl -t my-ip-monitor
+  445  history | grep arping
+  446  arping -0 -c 2 -w 3 -I wlan0 120.13.212.252
+  447  journalctl -b -t my-ip-monitor
+  448  journalctl -b -t my-ip-monitor
+  449  systemctl status my-ip-monitor
+  450  ls /etc/systemd/system
+  451  systemctl status ip-monitor
+  452  journalctl -b -t my-ip-monitor
+  453  systemctl stop ip-monitor
+  454  systemctl start ip-monitor
+  455  journalctl -b -t my-ip-monitor
+  456  journalctl -b -t my-ip-monitor
+  457  journalctl -b -t my-ip-monitor
+  458  systemctl status ip-monitor
+  459  nano /usr/local/bin/my-ip-monitor.sh
+  460  journalctl -b -t my-ip-monitor
+  461  arping -0 -c 2 -w 3 -I wlan0 120.13.212.252
+  462  arping -0 -c 2 -w 3 -I wlan0 120.13.212.252
+  463  arping -0 -c 2 -w 3 -I wlan0 120.13.212.252
+  464  arping -0 -c 2 -w 3 -I wlan0 120.13.212.252
+  465  journalctl -b -t my-ip-monitor
+  466  journalctl -b -t my-ip-monitor
+  467  journalctl -b -t my-ip-monitor
+  468  journalctl -b -t my-ip-monitor
+  469  journalctl -b -t my-ip-monitor
+  470  journalctl -b -t my-ip-monitor
+  471  journalctl -b -t my-ip-monitor
+  472  journalctl -b -t my-ip-monitor
+  473  ip add
+  474  ip add
+  475  ip add
+  476  ip add
+  477  ip add
+  478  ip add
+  479  systemctl status avahi-daemon
+  480  cat /etc/avahi/avahi-daemon.conf
+  481  ls /etc/avahi/
+  482  cat /etc/avahi/hosts
+  483  ls /etc/avahi/
+  484  cat /etc/avahi/services
+  485  ls /etc/avahi/services
+  486  ls /etc/avahi/services
+  487  ls
+  488  history | grep nano
+  489  nano /usr/local/bin/my-ip-monitor.sh
+  490  nano /etc/systemd/system/boot-ip-reset.service
+  491  nano /usr/local/bin/boot-ip-reset.sh
+  492  sudo nano /etc/systemd/system/find_wlan_ip_and_set.service
+  493  nano   /usr/local/bin/find_wlan_ip_and_set.sh
+  494  nano   /usr/local/bin/find_wlan_ip_and_set.sh
+  495  nano /usr/local/bin/my-ip-monitor.sh
+  496  nano /usr/local/bin/my-ip-monitor.sh
+  497  ls /etc/systemd/system
+  498  nano /usr/local/bin/my-ip-monitor.sh
+  499  nano /usr/local/bin/my-ip-monitor.sh
+  500  reboot now
+  501  cat /etc/hosts
+  502  cd /etc/netplan
+  503  cd /etc/network
+  504  ls
+  505  cat interfaces
+  506  cd interfaces.d
+  507  ls
+  508  cd ..
+  509  cat interfaces.new
+  510  cd if-down.d
+  511  ls
+  512  cat resolved
+  513  ls
+  514  cd ..
+  515  ls
+  516  cd if-down.d
+  517  ls
+  518  cat wpasupplicant
+  519  cd ..
+  520  grep -r local ./*
+  521  grep -r lan ./*
+  522  cd ..
+  523  grep -r lan ./*
+  524  grep -r local ./*
+  525  nano /usr/local/bin/cleanup_captures.sh
+  526  crontab -e
+  527  chmod +x /usr/local/bin/cleanup_captures.sh
+  528  ls -lah /usr/local/bin/
+  529  journalctl -b -t ip-monitor
+  530  journalctl -b -t find_wlan_ip_and_set
+  531  journalctl -b -t find_wlan_ip_and_s
+  532  journalctl -b -t boot-ip-reset
+  533  cat /usr/local/bin/find_wlan_ip_and_set.sh
+  534  journalctl -b -t wlan0-set-ip
+  535  cat /usr/local/bin/my-ip-monitor.sh
+  536  journalctl -b -t "my-ip-monitor"
+  537  journalctl -b -t "my-ip-monitor"
+  538  nano /usr/local/bin/my-ip-monitor.sh
+  539  history | grep journal
+  540  journalctl -b -t boot-ip-reset
+  541  journalctl -b -t wlan0-set-ip
+  542  cat /usr/local/bin/find_wlan_ip_and_set.sh
+  543  history > /home/pi/root_history

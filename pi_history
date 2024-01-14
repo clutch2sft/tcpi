@@ -1,0 +1,313 @@
+    1  sudo apt-get update
+    2  sudo apt-get upgrade
+    3  sudo shutdown now
+    4  whoami
+    5  cd /opt/
+    6  ls
+    7  sudo -i
+    8  ls
+    9  cd /opt
+   10  ls
+   11  mkdir my_flask_app
+   12  cd my_flask_app
+   13  sudo  mkdir my_flask_app
+   14  cd my_flask_app
+   15  python3 -m venv venv
+   16  sudo python3 -m venv venv
+   17  apt install python3.11-venv
+   18  sudo apt install python3.11-venv
+   19  sudo python3 -m venv venv
+   20  cd ..
+   21  sudo  mkdir rtshark-app
+   22  cd rtshark-app
+   23  sudo python3 -m venv venv
+   24  apt install tshark
+   25  sudo apt install tshark
+   26  ip add
+   27  lsb_release -a
+   28  sudo nano /etc/sysctl.conf
+   29  sudo sysctl -p
+   30  ip add
+   31  sudo apt install tshark
+   32  sudo useradd -m rtshark --disabled-password
+   33  sudo useradd -m rtshark --disabled-passwordsudo useradd -r -M -d /opt/rtshark-app -s /sbin/nologin rtshark
+   34  sudo useradd -r -M -d /opt/rtshark-app -s /sbin/nologin rtshark
+   35  sudo chown rtshark:rtshark /opt/rtshark-app
+   36  sudo chmod 700 /opt/rtshark-app
+   37  sudo visudo
+   38  cd ..
+   39  ls -lah
+   40  sudo chmod 777 ./rtshark-app
+   41  cd rtshark-app
+   42  ls -lah
+   43  cd venv
+   44  ls -lah
+   45  cd ..
+   46  sudo chmod -r 777 ./rtshark-app
+   47  sudo chmod 777 -r ./rtshark-app
+   48  sudo chmod 777 -R ./rtshark-app
+   49  ls
+   50  cd /usr/local/bin
+   51  sudo nano tshark_capture.sh
+   52  sudo -i
+   53  cd /opt/rtshark-app
+   54  history | grep env
+   55  sudo python3 -m venv venv
+   56  ./venv/Scripts\activate
+   57  ls
+   58  source venv/bin/activate
+   59  pip install Flask
+   60  ls -lah
+   61  sudo chown -r pi:pi ./*
+   62  sudo chown -R pi:pi ./*
+   63  ls -lah
+   64  pip install Flask
+   65  pip install --force-reinstall Flask-PAM
+   66  ls ../
+   67  ls ../rtshark.sav
+   68  ls -lah
+   69  cp ../rtshark.sav/app.py ./
+   70  ls -lah
+   71  cd ..
+   72  ls
+   73  sudo chown -R pi:pi ./rtshark-app
+   74  cd rtshark-app
+   75  cp ../rtshark.sav/app.py ./
+   76  ls
+   77  cp -r ../rtshark.sav/templates/* ./
+   78  ls -lah
+   79  cp -r ../rtshark.sav/templates/ ./
+   80  ls -lah
+   81  rm ./index.html
+   82  rm ./list_captures.html
+   83  rm ./login.html
+   84  ls
+   85  ls -lah
+   86  cd ..
+   87  ls -lah
+   88  sudo -i
+   89  exit
+   90  source venv/bin/activate
+   91  export FLASK_APP=app.py
+   92  export FLASK_ENV=development
+   93  flask run
+   94  pip install flask
+   95  flask run
+   96  mkdir -p .config
+   97  ls -lah
+   98  touch .config/tshark_filter.ini
+   99  flask run
+  100  pintenv
+  101  printenv
+  102  history | grep export
+  103  cd /opt/rtshark-app/venv
+  104  ls
+  105  cd bin
+  106  ls
+  107  ls -lah
+  108  cd ..
+  109  ls -lah
+  110  flask run
+  111  ls -lah
+  112  ls -lah .config
+  113  sudo chown -R rtshark:rtshark /opt/rtshark
+  114  sudo chown -R rtshark:rtshark /opt/rtshark-app
+  115  ls -lah
+  116  sudo find /opt/rtshark-app -type d -exec chmod 755 {} \;
+  117  sudo find /opt/rtshark-app -type f -exec chmod 644 {} \;
+  118  ls -lah
+  119  cd venv
+  120  ls
+  121  ls -lah
+  122  cd bin
+  123  ls -lah
+  124  sudo chmod 755 ./*
+  125  ls -lah
+  126  cd ..
+  127  ls -lah
+  128  cd include
+  129  ls -lah
+  130  cd python3.11
+  131  ls -lah
+  132  cd ..
+  133  ls
+  134  cd lib
+  135  ls
+  136  cd python3.11
+  137  ls
+  138  cd site-packages
+  139  ls
+  140  ls -lah
+  141  cd blinker
+  142  ls -lah
+  143  cd ..
+  144  ls
+  145  ls -lah
+  146  su -u rtshark pip install Flask-PAM
+  147  sudo su rtshark pip install Flask-PAM
+  148  pip install Flask-PAM
+  149  sudo pip install Flask-PAM
+  150  ls -lah /opt/rtshark-app/venv/lib/python3.11/site-packages/
+  151  ls -lah /opt/rtshark-app/venv/lib/python3.11/
+  152  sudo chown rtshark:pi /opt/rtshark-app/venv/lib/python3.11/
+  153  sudo chmod 765 /opt/rtshark-app/venv/lib/python3.11/
+  154  ls -lah /opt/rtshark-app/venv/lib/python3.11/
+  155  sudo chmod 755 /opt/rtshark-app/venv/lib/python3.11/
+  156  ls -lah /opt/rtshark-app/venv/lib/python3.11/
+  157  sudo chmod 775 /opt/rtshark-app/venv/lib/python3.11/
+  158  ls -lah /opt/rtshark-app/venv/lib/python3.11/
+  159  sudo chmod 777 /opt/rtshark-app/venv/lib/python3.11/
+  160  ls -lah /opt/rtshark-app/venv/lib/python3.11/
+  161  sudo chmod 755 /opt/rtshark-app/venv/lib/python3.11/
+  162  ls -lah /opt/rtshark-app/venv/lib/python3.11/
+  163  sudo chown rtshark:rtshark /opt/rtshark-app/venv/lib/python3.11/
+  164  sudo chown rtshark:pi /opt/rtshark-app/venv/lib/python3.11/site-packages
+  165  sudo chmod 775 /opt/rtshark-app/venv/lib/python3.11/site-packages
+  166  ls -lah /opt/rtshark-app/venv/lib/python3.11/
+  167  pip install Flask-PAM
+  168  ls -lah /opt/rtshark-app/venv/bin/pyrsa-decrypt
+  169  ls -lah /opt/rtshark-app/venv/bin/
+  170  ls -lah /opt/rtshark-app/venv/
+  171  ls chown rtshark:pi /opt/rtshark-app/venv/bin
+  172  sudo chown rtshark:pi /opt/rtshark-app/venv/bin
+  173  ls -lah /opt/rtshark-app/venv/
+  174  sudo chmod 775 /opt/rtshark-app/venv/bin
+  175  pip install Flask-PAM
+  176  ls
+  177  ls -lah
+  178  sudo chown rtshark:pi ./templates
+  179  sudo chmod 775 ./templates
+  180  sudo chmod 775 ./app.py
+  181  sudo chown rtshark:pi ./app.py
+  182  flask run
+  183  history | grep chmod
+  184  sudo find /opt/rtshark-app -type d -exec chmod 755 {} \;
+  185  sudo find /opt/rtshark-app -type f -exec chmod 644 {} \;
+  186  history | grep chown
+  187  udo chown -R rtshark:rtshark /opt/rtshark-app
+  188  sudo chown -R rtshark:rtshark /opt/rtshark-app
+  189  sudo chown -R pi:pi /opt/rtshark-app
+  190  pip install Flask-PAM
+  191  la -lah /opt/rtshark-app/venv/bin/pip
+  192  ls -lah /opt/rtshark-app/venv/bin/pip
+  193  sudo find /opt/rtshark-app -type f -exec chmod 744 {} \;
+  194  pip install Flask-PAM
+  195  flask run
+  196  pip install --force-reinstall Flask-PAM
+  197  flask run
+  198  ls -lah /opt/rtshark-app/venv/lib/python3.11/site-packages/flask_pam/
+  199  cat /opt/rtshark-app/venv/lib/python3.11/site-packages/flask_pam/__init__.py
+  200  cat auth.py
+  201  cat /opt/rtshark-app/venv/lib/python3.11/site-packages/flask_pam/auth.py
+  202  flask run
+  203  ls
+  204  ls 0lah
+  205  ls -lah
+  206  cd ..
+  207  cd rtshark-app
+  208  ls -lah
+  209  flask run
+  210  pip install Flask-Simple-PAM
+  211  flask run
+  212  pip install Flask-Simple-PAM
+  213  flask run
+  214  pip install python-pam
+  215  flask run
+  216  ls -lah ../opt/rtshark.sav
+  217  ls ../
+  218  ls -lah ../rtshark.sav
+  219  mkdir .config
+  220  touch .config/tshark_filter.ini
+  221  ls -lah
+  222  cd ..
+  223  history | grep chown
+  224  sudo chown -R rtshark:rtshark /opt/rtshark-app
+  225  ls -lah
+  226  cd rtshark-app
+  227  ls
+  228  ls -lah
+  229  sudo chown rtshark:pi ./app.py
+  230  sudo chown rtshark:pi ./templates/*
+  231  sudo chmod 665 ./app.py
+  232  ls -lah
+  233  sudo chmod 775 ./app.py
+  234  ls -lah
+  235  sudo chmod 775 ./templates/*
+  236  flask run
+  237  sudo su - rtshark
+  238  sudo -u rtshark flask run
+  239  sudo -u rtshark /opt/rtshark-app/venv/bin/python ./app.py
+  240  flask run
+  241  ls /etc/pam.d
+  242  sudo -u rtshark printenv
+  243  printenv
+  244  pip install flask-login
+  245  ls -lah
+  246  sudo chown -R rtshark:pi ./*
+  247  ls -lah
+  248  pip install flask-login
+  249  ls /venv/bin
+  250  ls venv/bin
+  251  sudo -u rtshark venv/bin/pip install flask-login
+  252  sudo -u rtshark /opt/rtshark-app/venv/bin/python ./app.py
+  253  sudo -u rtshark venv/bin/pip install Flask-Security
+  254  sudo -u rtshark /opt/rtshark-app/venv/bin/python ./app.py
+  255  ls -lah
+  256  cd ..
+  257  ls -lah
+  258  sudo chown rtshark.pi ./rtshark-app
+  259  sudo chown rtshark:pi ./rtshark-app
+  260  sudo chmod 775 ./rtshark-app
+  261  ls -lah
+  262  sudo -u rtshark pintenv
+  263  sudo -u rtshark printenv
+  264  sudo -u rtshark /opt/rtshark-app/venv/bin/python ./app.py
+  265  ls
+  266  cd rtshart-app
+  267  cd rtshark-app
+  268  sudo -u rtshark /opt/rtshark-app/venv/bin/python ./app.py
+  269  ls
+  270  cd .config
+  271  ls
+  272  sudo -i
+  273  exit
+  274  sudo -i
+  275  exit
+  276  sudo -u rtshark venv/bin/pip install ansi2html
+  277  sudo -i
+  278  sudo -i
+  279  hsitory | grep system
+  280  history | grep system
+  281  ps -aux | grep net
+  282  ps -aux | grep Net
+  283  ls /etc/wpa_supplicant
+  284  cat /etc/wpa_supplicant.conf
+  285  cat /etc/wpa_supplicant/wpa_supplicant.conf
+  286  sudo cat /etc/wpa_supplicant/wpa_supplicant.conf
+  287  ls /etc/NetPlan
+  288  ls /etc/netplan
+  289  ls /etc/NetworkManager
+  290  ls /etc/NetworkManager/system-connections
+  291  nmcli device status
+  292  nmcli con add con-name MyWiFiConnection ifname wlan0 type wifi ssid "3 IDCleanse Devices-129" ip4 192.168.1.50/24 gw4 192.168.1.1
+  293  nmcli con modify MyWiFiConnection wifi-sec.key-mgmt wpa-psk
+  294  nmcli con modify MyWiFiConnection wifi-sec.psk "bG+dsfmx+NBZzEr=:%"
+  295  nmcli con modify MyWiFiConnection ipv4.dns 1.1.1.1
+  296  nmcli con add con-name wlan0 ifname wlan0 type wifi ssid "3 IDCleanse Devices-129" ip4 192.168.1.50/24 gw4 192.168.1.1
+  297  nmcli con modify wlan0 wifi-sec.key-mgmt wpa-psk
+  298  nmcli con modify wlan0 wifi-sec.psk "bG+dsfmx+NBZzEr=:%"
+  299  nmcli con modify wlan0 ipv4.dns 1.1.1.1
+  300  nmcli device status
+  301  nmcli con show
+  302  nmcli con add con-name wlan0 ifname wlan0 type wifi ssid "3 IDCleanse Devices-129" ip4 192.168.1.50/24 gw4 192.168.1.1
+  303  sudo -i
+  304  ls
+  305  sudo -i
+  306  ip add
+  307  sudo -i
+  308  ip add
+  309  history | grep cat
+  310  sudo -i
+  311  ip add
+  312  sudo -i
+  313  history > pi_history

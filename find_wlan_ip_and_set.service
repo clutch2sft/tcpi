@@ -1,0 +1,12 @@
+[Unit]
+Description=Custom Network Setup Script
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/find_wlan_ip_and_set.sh
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
